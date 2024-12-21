@@ -28,7 +28,7 @@ const connectToDatabaseAndStartServer = async () => {
         console.log('Connected to MongoDB...');
         // Start the server
         app.listen(process.env.PORT, () => {
-            console.log(`Server is running on port ${process.env.PORT}`);
+            console.log(`Server is running...`);
         });
     } catch (error) {
         console.error('Error:', error.message);

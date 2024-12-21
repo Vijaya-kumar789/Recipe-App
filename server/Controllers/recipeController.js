@@ -1,6 +1,5 @@
 
 const axios = require('axios')
-const base_url = process.env.BASE_URL
 const recipeController = {
    
     getCategory : async(req,res)=>{

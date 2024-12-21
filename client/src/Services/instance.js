@@ -13,7 +13,6 @@ const instance = axios.create({
         'Content-Type': 'application/json',
     },
 });
-console.log(baseURL);
 const protectedInstance = axios.create({
     baseURL,
     timeout: 5000,

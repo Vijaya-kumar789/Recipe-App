@@ -47,7 +47,6 @@ const userController = {
         try {
             //get the username and password from req body
             const { email } = req.body;
-            console.log(req.body)
             //check if the user is exits in database
             const user = await User.findOne({ email });
 

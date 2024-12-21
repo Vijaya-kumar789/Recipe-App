@@ -45,7 +45,7 @@ const NavBar = () => {
 
   return (
     <>
-      <section className="shadow-lg">
+      <section className="shadow-lg sticky top-0 z-10 bg-white">
         <nav className="flex flex-wrap items-center justify-between w-5/6 mx-auto py-3 ">
           <div className="">
             <Link to="/">

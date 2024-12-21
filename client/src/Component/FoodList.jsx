@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import Card from "./card";
+import Card from "./Card";
 import { useDispatch, useSelector } from "react-redux";
 import { setRecipeByCategory, setLoading } from "../Redux/reducer/reducers";
 import { useNavigate } from "react-router-dom";

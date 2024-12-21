@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { WiStars } from "react-icons/wi";
-import Card from "./card";
+import Card from "./Card";
 import { useDispatch, useSelector } from "react-redux";
 import { setCategory, setLoading } from "../Redux/reducer/reducers";
 import { BACKEND_API } from "../../utility/config";

@@ -17,7 +17,6 @@ const recipeController = {
     filterMealsByCategory : async( req,res)=>{
 
         try {
-            console.log(base_url);
             const category = req.params.category;
             
             const filteredMeal = await axios.get(`${process.env.BASE_URL}/filter.php?c=${category}`);

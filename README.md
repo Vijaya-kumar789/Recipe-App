@@ -1,12 +1,13 @@
 # Kitchen Whiz Recipe App
 
-This repository contains a Recipe App built using TheMealDB API. The app allows users to explore a wide range of recipes and view detailed instructions by category.
+This repository contains a Recipe App built using TheMealDB API. The app includes features like user authentication (login and registration) and users to explore a wide range of recipes and view detailed instructions by category.
 
 ---
 
 ## Features
 
 - Browse recipes by category.
+-  User authentication: Login and Registration pages.
 - View detailed recipe instructions and ingredients.
 - Responsive design for a seamless experience on all devices.
 
@@ -16,8 +17,10 @@ This repository contains a Recipe App built using TheMealDB API. The app allows 
 
 - **Frontend:** React.js, Tailwind
 - **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** JSON Web Tokens (JWT)
 - **API:** [TheMealDB API](https://www.themealdb.com)
-- **Deployment:** [Netlify/Render] (replace with your choice)
+- **Deployment:** [Netlify/Render]
 
 ---
 
@@ -59,13 +62,20 @@ This repository contains a Recipe App built using TheMealDB API. The app allows 
    ```bash
    npm install
    ```
+   
+7. Configure environment variables in a `.env` file in the `server` folder:
+   ```env
+   MONGO_URI=<your-mongodb-connection-string>
+   JWT_SECRET=<your-jwt-secret>
+   PORT=5000
+   ```
 
-7. Start the backend server:
+8. Start the backend server:
    ```bash
    npm start
    ```
 
-8. Open your browser and navigate to `http://localhost:3000` to view the app.
+9. Open your browser and navigate to `http://localhost:3000` to view the app.
 
 ---
 
